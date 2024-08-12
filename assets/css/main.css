@@ -1,0 +1,238 @@
+/* =============== Google Font- Roboto =============== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* =============== CSS Variables =============== */
+:root {
+  /* Colors */
+  --bg-color: #1f2937;
+  --gray-color: #e5e7eb;
+  --blue-color: #3882f6;
+  --white-color: #f9faf8;
+
+  /* Font Size */
+  --large-text: 48px;
+  --sec-text: 36px;
+  --medium-text: 24px;
+  --info-text: 18px;
+}
+
+/* =============== Base Styles =============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+section {
+  width: 968px;
+  margin-inline: 1.5rem;
+  padding: 1.5rem 0 3.5rem;
+}
+
+header {
+  width: 968px;
+  margin-inline: 1.5rem;
+  padding: 1.5rem 0 3.5rem;
+}
+
+/* =============== Reuseable Styles =============== */
+
+.section__one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-color);
+  padding-bottom: 4rem;
+}
+
+.section__two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.section__three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white-color);
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.section__four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+/* =============== Header Styles =============== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-color);
+}
+
+.logo {
+  font-size: var(--medium-text);
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav__link {
+  font-size: var(--info-text);
+  color: var(--gray-color);
+  cursor: pointer;
+}
+
+/* =============== Home Styles =============== */
+.hero__div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.info__dev {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+.info__dev h3 {
+  font-size: var(--large-text);
+  font-weight: 900;
+  color: var(--white-color);
+}
+
+.info__dev p {
+  font-size: var(--info-text);
+  color: var(--gray-color);
+}
+
+.info__dev button {
+  width: 120px;
+}
+
+.hero__img {
+  width: 550px;
+  height: 350px;
+}
+/* =============== Information Styles =============== */
+.title {
+  font-size: var(--sec-text);
+  font-weight: 900;
+  color: var(--bg-color);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 36px;
+}
+
+.card-img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid var(--blue-color);
+  border-radius: 12px;
+}
+
+.card p {
+  padding-top: 16px;
+  font-size: var(--info-text);
+  color: var(--bg-color);
+}
+/* =============== Quote Styles =============== */
+.quote {
+  font-size: var(--sec-text);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--bg-color);
+}
+
+.author {
+  text-align: end;
+  font-weight: 500;
+}
+/* =============== CTA Styles =============== */
+.cta__container {
+  min-width: 968px;
+  background: var(--blue-color);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--white-color);
+}
+
+.cta__container div {
+  padding: 1rem;
+}
+
+.cta__container h5 {
+  font-size: var(--sec-text);
+  font-weight: 600;
+}
+
+.cta__container p {
+  font-size: var(--medium-text);
+  font-weight: 400;
+}
+
+.cta {
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+/* =============== Footer Styles =============== */
+footer {
+  background-color: var(--bg-color);
+  padding: 1.5rem;
+  font-size: var(--medium-text);
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+}
